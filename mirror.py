@@ -29,4 +29,4 @@ for item in d['entries']:
         # instead of importing a library to generate rss-feeds...
         with fileinput.FileInput('tempdir/feed.xml', inplace=True, backup='.bak') as file:
             for line in file:
-            print(line.replace(image, newurl), end='')
+                print(line.replace(image, newurl), end='')
